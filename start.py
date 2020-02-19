@@ -50,9 +50,13 @@ class Iot_radio():
         playlistAPI = self.apiDomain + '/playlist/'
         r = requests.get(playlistAPI, data="")
         data = r.json()
-        nextSong = data['Item']['songList']['L'][0]['S']
-        print(nextSong)
-        return nextSong
+        if data['Item']['songList']['L']:
+            nextSong = data['Item']['songList']['L'][0]['S']
+            print(nextSong)
+            return nextSong
+        else:
+            return False
+
 
     def removeFromPlaylist(self):
         playlistAPI = self.apiDomain + '/playlist/'
@@ -60,9 +64,7 @@ class Iot_radio():
 
     def playNextSong(self):
 
-        # TODO API GET request for playlist values
         # Get next song from playlist
-
         nextSong = self.requestNextSong()
         filePath = ""
         if nextSong:
@@ -70,7 +72,6 @@ class Iot_radio():
             self.currentlyPlayingId = nextSong
 
             # If song was from playlist, remove it from list
-            # TODO API DELETE request, remove from playlist
             self.removeFromPlaylist()
         else:
             nextSong = random.randint(1, 82)
@@ -81,12 +82,26 @@ class Iot_radio():
         self.playMusic(filePath)
 
     def determineNextStatus(self):
-        # TODO API GET request, find skipped value and playing/paused value
-        self.skipNext = False
-        nextStatus = playerStatus.playing
+        # Find skipped value
+        skipAPI = self.apiDomain + '/skipsong/'
+        r = requests.get(skipAPI, data="")
+        data = r.json()
+        self.skipNext = data['Item']['skipSong']['BOOL']
 
-        if self.skipNext is True:
-            # TODO API PUT REQUEST, set skipped value to false
+        # Find next playing/paused value
+        nextStatus = ""
+        pausedAPI = self.apiDomain + '/paused/'
+        r = requests.get(pausedAPI, data="")
+        data = r.json()
+        if data['Item']['paused']['BOOL']:
+            nextStatus = playerStatus.paused
+            print("paused")
+        else:
+            nextStatus = playerStatus.playing
+
+        if self.skipNext:
+            skipAPI = skipAPI + 'false'
+            r = requests.post(skipAPI, data="")
             self.playNextSong()
 
         else:
@@ -120,7 +135,7 @@ class Iot_radio():
 
     def mainLoop(self):
         self.determineNextStatus()
-        time.sleep(4)
+        #time.sleep(4)
         self.uploadCurrentStatus()
 
     def start(self):
