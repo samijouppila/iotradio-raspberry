@@ -1,0 +1,587 @@
+{
+	"musicDB" :
+	[
+		{
+			"id": 1,
+      		"length" : 201,
+			"title" : "Funkorama",
+			"fileName" : "3788-funkorama-by-kevin-macleod.mp3",
+			"genre" : ["funk"]
+		},
+		{
+			"id": 2,
+      		"length" : 195,
+			"title" : "Whiskey on the Mississippi",
+			"fileName" : "4624-whiskey-on-the-mississippi-by-kevin-macleod.mp3",
+			"genre" : ["blues"]
+		},
+		{
+			"id": 3,
+      		"length" : 208,
+			"title" : "Acid Trumpet",
+			"fileName" : "3340-acid-trumpet-by-kevin-macleod.mp3",
+			"genre" : ["jazz", "relax"]
+		},
+		{
+			"id": 4,
+      		"length" : 96,
+			"title" : "Heartbreaking",
+			"fileName" : "3863-heartbreaking-by-kevin-macleod.mp3",
+			"genre" : ["contemporary", "piano"]
+		},
+		{
+			"id": 5,
+      		"length" : 286,
+			"title" : "Inspired",
+			"fileName" : "3918-inspired-by-kevin-macleod.mp3",
+			"genre" : ["electronica","experimental"]
+		},
+		{
+			"id": 6,
+      		"length" : 288,
+			"title" : "Cold Funk",
+			"fileName" : "3522-cold-funk-by-kevin-macleod.mp3",
+			"genre" : ["funk","rock"]
+		},
+		{
+			"id": 7,
+      		"length" : 230,
+			"title" : "Big Rock",
+			"fileName" : "3436-big-rock-by-kevin-macleod.mp3",
+			"genre" : ["rock"]
+		},
+		{
+			"id": 8,
+      		"length" : 235,
+			"title" : "Life of Riley",
+			"fileName" : "3976-life-of-riley-by-kevin-macleod.mp3",
+			"genre" : ["pop"]
+		},
+		{
+			"id": 9,
+      		"length" : 225,
+			"title" : "Feeling Good",
+			"fileName" : "3744-feelin-good-by-kevin-macleod.mp3",
+			"genre" : ["blues","rock"]
+		},
+		{
+			"id": 10,
+      		"length" : 128,
+			"title" : "Clear Waters",
+			"fileName" : "3516-clear-waters-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 11,
+      		"length" : 187,
+			"title" : "Shades of Spring",
+			"fileName" : "4342-shades-of-spring-by-kevin-macleod.mp3",
+			"genre" : ["jazz"]
+		},
+		{
+			"id": 12,
+      		"length" : 283,
+			"title" : "Bossa Antigua",
+			"fileName" : "3454-bossa-antigua-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 13,
+      		"length" : 208,
+			"title" : "Windswept",
+			"fileName" : "4629-windswept-by-kevin-macleod.mp3",
+			"genre" : ["contemporary", "lounge"]
+		},
+		{
+			"id": 14,
+      		"length" : 122,
+			"title" : "Surf Shimmy",
+			"fileName" : "4448-surf-shimmy-by-kevin-macleod.mp3",
+			"genre" : ["blues","rock"]
+		},
+		{
+			"id": 15,
+      		"length" : 118,
+			"title" : "Nervous",
+			"fileName" : "4118-nervous-by-kevin-macleod.mp3",
+			"genre" : ["piano"]
+		},
+		{
+			"id": 16,
+      		"length" : 182,
+			"title" : "Protofunk",
+			"fileName" : "4247-protofunk-by-kevin-macleod.mp3",
+			"genre" : ["funk"]
+		},
+		{
+			"id": 17,
+      		"length" : 73,
+			"title" : "Sneaky Adventure",
+			"fileName" : "4383-sneaky-adventure-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical"]
+		},
+		{
+			"id": 18,
+      		"length" : 248,
+			"title" : "District Four",
+			"fileName" : "3662-district-four-by-kevin-macleod.mp3",
+			"genre" : ["funk","rock"]
+		},
+		{
+			"id": 19,
+      		"length" : 184,
+			"title" : "White",
+			"fileName" : "4626-white-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","musical","piano"]
+		},
+		{
+			"id": 20,
+      		"length" : 126,
+			"title" : "Easy Lemon",
+			"fileName" : "3697-easy-lemon-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","modern"]
+		},
+		{
+			"id": 21,
+      		"length" : 291,
+			"title" : "Sovereign Quarter",
+			"fileName" : "4396-sovereign-quarter-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 22,
+      		"length" : 93,
+			"title" : "Investigations",
+			"fileName" : "3924-investigations-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical","modern"]
+		},
+		{
+			"id": 23,
+      		"length" : 114,
+			"title" : "Continue Life",
+			"fileName" : "3545-continue-life-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 24,
+      		"length" : 135,
+			"title" : "Hidden Agenda",
+			"fileName" : "3872-hidden-agenda-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical"]
+		},
+		{
+			"id": 25,
+      		"length" : 226,
+			"title" : "Spy Glass",
+			"fileName" : "4410-spy-glass-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","jazz"]
+		},
+		{
+			"id": 26,
+      		"length" : 145,
+			"title" : "Exhilarate",
+			"fileName" : "3727-exhilarate-by-kevin-macleod.mp3",
+			"genre" : ["rock"]
+		},
+		{
+			"id": 27,
+      		"length" : 163,
+			"title" : "With the Sea",
+			"fileName" : "4638-with-the-sea-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 28,
+      		"length" : 264,
+			"title" : "Lost Frontier",
+			"fileName" : "4004-lost-frontier-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical"]
+		},
+		{
+			"id": 29,
+      		"length" : 296,
+			"title" : "Easy Jam",
+			"fileName" : "3694-easy-jam-by-kevin-macleod.mp3",
+			"genre" : ["reggae"]
+		},
+		{
+			"id": 30,
+      		"length" : 224,
+			"title" : "Sunshine (version 2)",
+			"fileName" : "4438-sunshine-version-2-by-kevin-macleod.mp3",
+			"genre" : ["piano","pop","rock"]
+		},
+		{
+			"id": 31,
+      		"length" : 228,
+			"title" : "Slow Burn",
+			"fileName" : "4372-slow-burn-by-kevin-macleod.mp3",
+			"genre" : ["blues","rock"]
+		},
+		{
+			"id": 32,
+      		"length" : 316,
+			"title" : "Almost Bliss",
+			"fileName" : "5032-almost-bliss-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","contemporary","lounge"]
+		},
+		{
+			"id": 33,
+      		"length" : 202,
+			"title" : "Americana",
+			"fileName" : "3361-americana-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical"]
+		},
+		{
+			"id": 34,
+      		"length" : 194,
+			"title" : "Covert Affair",
+			"fileName" : "3558-covert-affair-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 35,
+      		"length" : 206,
+			"title" : "RetroFuture Clean",
+			"fileName" : "4277-retrofuture-clean-by-kevin-macleod.mp3",
+			"genre" : ["experimental","reggae","rock"]
+		},
+		{
+			"id": 36,
+      		"length" : 159,
+			"title" : "Deadly Roulette",
+			"fileName" : "3625-deadly-roulette-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 37,
+      		"length" : 259,
+			"title" : "Smooth Lovin",
+			"fileName" : "4379-smooth-lovin-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 38,
+      		"length" : 204,
+			"title" : "Killing Time",
+			"fileName" : "3953-killing-time-by-kevin-macleod.mp3",
+			"genre" : ["electronica"]
+		},
+		{
+			"id": 39,
+      		"length" : 208,
+			"title" : "Summon the Rawk",
+			"fileName" : "4434-summon-the-rawk-by-kevin-macleod.mp3",
+			"genre" : ["experimental","rock"]
+		},
+		{
+			"id": 40,
+      		"length" : 158,
+			"title" : "Unnatural Situation",
+			"fileName" : "4567-unnatural-situation-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","piano"]
+		},
+		{
+			"id": 41,
+      		"length" : 204,
+			"title" : "Hotrock",
+			"fileName" : "3886-hotrock-by-kevin-macleod.mp3",
+			"genre" : ["rock"]
+		},
+		{
+			"id": 42,
+      		"length" : 144,
+			"title" : "Water Lily",
+			"fileName" : "4609-water-lily-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","piano"]
+		},
+		{
+			"id": 43,
+      		"length" : 168,
+			"title" : "In Your Arms",
+			"fileName" : "3906-in-your-arms-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 44,
+      		"length" : 181,
+			"title" : "Hard Boiled",
+			"fileName" : "3857-hard-boiled-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","jazz"]
+		},
+		{
+			"id": 45,
+      		"length" : 172,
+			"title" : "Heart of Nowhere",
+			"fileName" : "3861-heart-of-nowhere-by-kevin-macleod.mp3",
+			"genre" : ["cinematic", "contemporary", "experimental"]
+		},
+		{
+			"id": 46,
+      		"length" : 120,
+			"title" : "Dirt Rhodes",
+			"fileName" : "3650-dirt-rhodes-by-kevin-macleod.mp3",
+			"genre" : ["blues","experimental"]
+		},
+		{
+			"id": 47,
+      		"length" : 184,
+			"title" : "Thief in the Night",
+			"fileName" : "4521-thief-in-the-night-by-kevin-macleod.mp3",
+			"genre" : ["blues","reggae","rock"]
+		},
+		{
+			"id": 48,
+      		"length" : 114,
+			"title" : "Midsummer Sky",
+			"fileName" : "4049-midsummer-sky-by-kevin-macleod.mp3",
+			"genre" : ["contemporary", "modern", "piano"]
+		},
+		{
+			"id": 49,
+      		"length" : 193,
+			"title" : "Aces High",
+			"fileName" : "3337-aces-high-by-kevin-macleod.mp3",
+			"genre" : ["funk"]
+		},
+		{
+			"id": 50,
+      		"length" : 177,
+			"title" : "Deliberate Thought",
+			"fileName" : "3635-deliberate-thought-by-kevin-macleod.mp3",
+			"genre" : ["electronica"]
+		},
+		{
+			"id": 51,
+      		"length" : 277,
+			"title" : "Celebration",
+			"fileName" : "5051-celebration-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","funk","rock"]
+		},
+		{
+			"id": 52,
+      		"length" : 139,
+			"title" : "Gearhead",
+			"fileName" : "3799-gearhead-by-kevin-macleod.mp3",
+			"genre" : ["rock"]
+		},
+		{
+			"id": 53,
+      		"length" : 72,
+			"title" : "Heartwarming",
+			"fileName" : "3864-heartwarming-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 54,
+      		"length" : 211,
+			"title" : "Aurea Carmina",
+			"fileName" : "4982-aurea-carmina-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","funk"]
+		},
+		{
+			"id": 55,
+      		"length" : 200,
+			"title" : "Angel Share",
+			"fileName" : "3367-angel-share-by-kevin-macleod.mp3",
+			"genre" : ["contemporary"]
+		},
+		{
+			"id": 56,
+      		"length" : 108,
+			"title" : "Stages of Grief",
+			"fileName" : "4412-stages-of-grief-by-kevin-macleod.mp3",
+			"genre" : ["cinematic", "contemporary", "piano"]
+		},
+		{
+			"id": 57,
+      		"length" : 192,
+			"title" : "Special Spotlight",
+			"fileName" : "4403-special-spotlight-by-kevin-macleod.mp3",
+			"genre" : ["electronica"]
+		},
+		{
+			"id": 58,
+      		"length" : 199,
+			"title" : "Simple Duet",
+			"fileName" : "4365-simple-duet-by-kevin-macleod.mp3",
+			"genre" : ["classical","contemporary","piano"]
+		},
+		{
+			"id": 59,
+      		"length" : 222,
+			"title" : "Malicious",
+			"fileName" : "4014-malicious-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical","modern"]
+		},
+		{
+			"id": 60,
+      		"length" : 161,
+			"title" : "Opportunity Walks",
+			"fileName" : "4173-opportunity-walks-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge","piano"]
+		},
+		{
+			"id": 61,
+      		"length" : 166,
+			"title" : "Sock Hop",
+			"fileName" : "4387-sock-hop-by-kevin-macleod.mp3",
+			"genre" : ["blues","rock"]
+		},
+		{
+			"id": 62,
+      		"length" : 126,
+			"title" : "Dreamy Flashback",
+			"fileName" : "3679-dreamy-flashback-by-kevin-macleod.mp3",
+			"genre" : ["cinematic","classical","modern"]
+		},
+		{
+			"id": 63,
+      		"length" : 180,
+			"title" : "Funky One",
+			"fileName" : "3790-funky-one-by-kevin-macleod.mp3",
+			"genre" : ["funk","modern"]
+		},
+		{
+			"id": 64,
+      		"length" : 266,
+			"title" : "Backbay Lounge",
+			"fileName" : "3408-backbay-lounge-by-kevin-macleod.mp3",
+			"genre" : ["jazz","lounge"]
+		},
+		{
+			"id": 65,
+      		"length" : 200,
+			"title" : "Stealth Groover",
+			"fileName" : "4415-stealth-groover-by-kevin-macleod.mp3",
+			"genre" : ["contemporary", "reggae"]
+		},
+		{
+			"id": 66,
+      		"length" : 153,
+			"title" : "Nile's Blues",
+			"fileName" : "4134-niles-blues-by-kevin-macleod.mp3",
+			"genre" : []
+		},
+		{
+			"id": 67,
+      		"length" : 212,
+			"title" : "Facile",
+			"fileName" : "3733-facile-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","lounge","piano"]
+		},
+		{
+			"id": 68,
+      		"length" : 167,
+			"title" : "Neolith",
+			"fileName" : "4116-neolith-by-kevin-macleod.mp3",
+			"genre" : ["rock"]
+		},
+		{
+			"id": 69,
+      		"length" : 207,
+			"title" : "Wizardtorium",
+			"fileName" : "4639-wizardtorium-by-kevin-macleodmp3",
+			"genre" : ["cinematic","classical"]
+		},
+		{
+			"id": 70,
+      		"length" : 190,
+			"title" : "Metalmania",
+			"fileName" : "4042-metalmania-by-kevin-macleod.mp3",
+			"genre" : ["experimental","rock"]
+		},
+		{
+			"id": 71,
+      		"length" : 120,
+			"title" : "Hustle",
+			"fileName" : "3890-hustle-by-kevin-macleod.mp3",
+			"genre" : ["blues"]
+		},
+		{
+			"id": 72,
+      		"length" : 72,
+			"title" : "Measured Paces",
+			"fileName" : "4029-measured-paces-by-kevin-macleod.mp3",
+			"genre" : ["modern","piano"]
+		},
+		{
+			"id": 73,
+      		"length" : 169,
+			"title" : "Bass Vibes",
+			"fileName" : "3422-bass-vibes-by-kevin-macleod.mp3",
+			"genre" : ["jazz"]
+		},
+		{
+			"id": 74,
+      		"length" : 239,
+			"title" : "Funky Chunk",
+			"fileName" : "3789-funky-chunk-by-kevin-macleod.mp3",
+			"genre" : ["funk","modern"]
+		},
+		{
+			"id": 75,
+      		"length" : 224,
+			"title" : "Take the Lead",
+			"fileName" : "4458-take-the-lead-by-kevin-macleod.mp3",
+			"genre" : ["experimental","rock"]
+		},
+		{
+			"id": 76,
+      		"length" : 97,
+			"title" : "Earnest",
+			"fileName" : "3689-earnest-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 77,
+      		"length" : 209,
+			"title" : "Cool Rock",
+			"fileName" : "3552-cool-rock-by-kevin-macleod.mp3",
+			"genre" : ["blues","rock"]
+		},
+		{
+			"id": 78,
+      		"length" : 115,
+			"title" : "Porch Blues",
+			"fileName" : "4232-porch-blues-by-kevin-macleod.mp3",
+			"genre" : ["blues"]
+		},
+		{
+			"id": 79,
+      		"length" : 217,
+			"title" : "Mandeville",
+			"fileName" : "4017-mandeville-by-kevin-macleod.mp3",
+			"genre" : ["reggae"]
+		},
+		{
+			"id": 80,
+      		"length" : 128,
+			"title" : "Impromptu in Blue",
+			"fileName" : "3903-impromptu-in-blue-by-kevin-macleod.mp3",
+			"genre" : ["contemporary","piano"]
+		},
+		{
+			"id": 81,
+      		"length" : 170,
+			"title" : "Eighties Action",
+			"fileName" : "3703-eighties-action-by-kevin-macleod.mp3",
+			"genre" : ["electronica","rock"]
+		},
+		{
+			"id": 82,
+      		"length" : 256,
+			"title" : "OctoBlues",
+			"fileName" : "4152-octoblues-by-kevin-macleod.mp3",
+			"genre" : ["blues","lounge"]
+		}
+	],
+  "playList": [],
+  "currentlyPlaying": 
+  {
+    "id": 1,
+    "currentDuration" : 25,
+    "skipSong" : false,
+    "paused" : false
+  }
+}

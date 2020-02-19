@@ -1,84 +1,84 @@
 import pygame
 import time
 import json
+import requests
+import random
+import os
 from enum import Enum
 
 class playerStatus(Enum):
     playing = 1
     paused = 2
 
-playList = [4,1,5]
-file = 'music/3337-aces-high-by-kevin-macleod.mp3'
 
-songInfo1 = {
-			"id": 1,
-      		"length" : 201,
-			"title" : "Funkorama",
-			"fileName" : "3788-funkorama-by-kevin-macleod.mp3",
-			"genre" : ["funk"]}
 
-songInfo4 = {
-			"id": 4,
-      		"length" : 96,
-			"title" : "Heartbreaking",
-			"fileName" : "3863-heartbreaking-by-kevin-macleod.mp3",
-			"genre" : ["contemporary", "piano"]}
-
-songInfo5 = {
-            "id": 5,
-      		"length" : 286,
-			"title" : "Inspired",
-			"fileName" : "3918-inspired-by-kevin-macleod.mp3",
-			"genre" : ["electronica","experimental"]}
-
+##Start of app class
 class Iot_radio():
     status = ""
     skipNext = False
+    apiDomain = ""
+    currentlyPlayingId = 2
 
     def songIsPlaying(self):
         return pygame.mixer.music.get_busy()
 
+    def pausePlayback(self):
+        pygame.mixer.music.pause()
+
+    def resumePlayback(self):
+        pygame.mixer.music.unpause()
+
+    def stopPlayback(self):
+        pygame.mixer.music.stop()
+
     def playMusic(self,fileName):
         pygame.mixer.music.load(fileName)
         pygame.mixer.music.play()
-        time.sleep(2)
-        pygame.mixer.music.pause()
-        # pygame.mixer.music.play()
 
     def getSongPath(self,id):
         path = "music/"
-        # TODO Find filePath from JSON
-
-        if id is 1:
-            path = path + songInfo1["fileName"]
-        elif id is 4:
-            path = path + songInfo4["fileName"]
-        elif id is 5:
-            path = path + songInfo5["fileName"]
-
-
-
+        with open('db.json') as json_file:
+            data = json.load(json_file)
+            songs = data["musicDB"]
+            for song in songs:
+                if id is song["id"]:
+                    path = path + song["fileName"]
+                    #print("Found")
         return path
 
+    def requestNextSong(self):
+        playlistAPI = self.apiDomain + '/playlist/'
+        r = requests.get(playlistAPI, data="")
+        data = r.json()
+        nextSong = data['Item']['songList']['L'][0]['S']
+        print(nextSong)
+        return nextSong
+
+    def removeFromPlaylist(self):
+        playlistAPI = self.apiDomain + '/playlist/'
+        r = requests.delete(playlistAPI, data="")
+
     def playNextSong(self):
+
         # TODO API GET request for playlist values
         # Get next song from playlist
 
-        filePath = file
-        if playList is not []:
-            songId= playList[0]
-            filePath = self.getSongPath(songId)
+        nextSong = self.requestNextSong()
+        filePath = ""
+        if nextSong:
+            filePath = self.getSongPath(int(nextSong))
+            self.currentlyPlayingId = nextSong
 
             # If song was from playlist, remove it from list
-            playList.pop(0)
+            # TODO API DELETE request, remove from playlist
+            self.removeFromPlaylist()
         else:
-            # TODO Randomize song if list is empty
-            #randomize song
-            pass
+            nextSong = random.randint(1, 82)
+            filePath = self.getSongPath(nextSong)
+            self.currentlyPlayingId = nextSong
+            print("Randomized song", nextSong)
 
-        # Play song
         self.playMusic(filePath)
-        pass
 
     def determineNextStatus(self):
         # TODO API GET request, find skipped value and playing/paused value
@@ -86,12 +86,13 @@ class Iot_radio():
         nextStatus = playerStatus.playing
 
         if self.skipNext is True:
+            # TODO API PUT REQUEST, set skipped value to false
             self.playNextSong()
+
         else:
             if nextStatus is playerStatus.playing:
                 if self.status is playerStatus.paused:
-                    # TODO resume song playback
-                    pass
+                    self.resumePlayback()
                 else:
                     if self.songIsPlaying():
                         # Resume playback
@@ -101,18 +102,20 @@ class Iot_radio():
                         self.playNextSong()
             else:
                 if self.status is playerStatus.playing:
-                    # TODO Stop playback
-                    pass
+                    self.pausePlayback()
                 else:
                     # Playback remains paused
                     pass
 
-
         self.status = nextStatus
 
     def uploadCurrentStatus(self):
-        # TODO API POST request, save currentlyPlaying id & duration
+        currentlyPlayingIdAPI = self.apiDomain + '/currentlyplaying/' + str(self.currentlyPlayingId)
+        r = requests.put(currentlyPlayingIdAPI, data="")
+
         duration = pygame.mixer.music.get_pos()
+        durationUpdateAPI = self.apiDomain + '/durationupdate/' + str(duration)
+        r = requests.put(durationUpdateAPI, data="")
         print(duration)
 
     def mainLoop(self):
@@ -122,9 +125,11 @@ class Iot_radio():
 
     def start(self):
         self.status = playerStatus.playing
+        self.apiDomain = os.getenv('IOTRADIO_API_DOMAIN')
         pygame.mixer.init()
         while True:
             self.mainLoop()
+## End of app class
 
 def main():
     app = Iot_radio()
